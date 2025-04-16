@@ -1,0 +1,502 @@
+:root {
+  --color-light-gray: #F9FAFB;
+  --color-gray: #E5E7EB;
+  --color-dark: #111827;
+  --color-purple: #8B5CF6;
+
+  --border-radius4: 4px;
+  --border-radius16: 16px;
+  --border: 2px solid var(--color-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-gray);
+  height: 100%;
+  width: 100vw;
+  font-family: 'inter', 'sans-serif';
+  color: var(--color-dark);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  height: 192px;
+  width: 100vw;
+  background-color: var(--color-light-gray);
+}
+
+.fup {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 192px;
+  margin-right: 192px;
+}
+
+.logo {
+  float: left;
+}
+
+.rightfup {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+.info {
+  font-size: 14px;
+  color: #333;
+  line-height: 7px;
+  text-align: right;
+  padding-right: 7px;
+}
+
+.phone-section {
+  text-align: center;
+  border-left: 2px solid var(--color-purple);
+  padding-left: 7px;
+  line-height: 3px;
+}
+
+.phone {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.free-calls {
+  font-size: 16px;
+}
+
+.navsection {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--color-dark);
+  font-weight: bold;
+}
+
+.nav a.active {
+color: var(--color-purple);
+position: relative;
+}
+
+.nav a.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-purple);
+  margin-top: 2px;
+}
+
+.nav a:hover {
+  color: var(--color-purple);
+  cursor: pointer;
+}
+
+button {
+  color: white;
+  border: none;
+  border-radius: var(--border-radius4);
+  cursor: pointer;
+}
+
+.application {
+  height: 44px;
+  width: 196px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  background-color: var(--color-purple);
+}
+
+main {
+  width: 1536px;
+}
+
+#калькулятор {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 24px;
+  height: 584px;
+  margin-top: 72px;
+}
+
+.infomain {
+  height: 584px;
+  width: 756px;
+  position: relative;
+}
+
+.info1 {
+  font-size: 39px;
+  font-weight: 900;
+  position: relative;
+  top: -30px;
+}
+
+.info2 {
+  font-size: 22px;
+  font-weight: 400;
+  position: relative;
+  top: -65px;
+}
+
+.infomain img {
+  position: relative;
+  top: -79px;
+}
+
+.calculator {
+  height: 584px;
+  width: 756px;
+  background-color: var(--color-light-gray);
+  border-radius: var(--border-radius16);
+  display: flex;
+  flex-direction: column;
+  min-height: 584px;
+  justify-content: center;
+  align-items: center;
+}
+
+.calctext {
+  width: 358px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calc {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.count {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
+
+.form-grid {
+  width: 496px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-item input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid var(--color-dark);
+    border-radius: 4px;
+    outline: none;
+}
+
+.submit-button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: var(--color-purple);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+#о-нас {
+  height: 452px;
+  width: 1536px;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 452px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'sans-serif';
+  color: var(--color-dark);
+  font-weight: 900;
+}
+
+.advlist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 392px;
+  gap: 24px;
+}
+
+.advitem {
+  height: 184px;
+  width: 496px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.advitem p {
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.advitem img {
+  margin-right: 12px;
+}
+
+#гарантии {
+  height: 671px;
+  width: 1536px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.quality-text {
+  width: 756px;
+  text-align: center;
+}
+
+.quality-text p {
+  font-size: 18px;
+}
+
+.documents {
+  height: 579px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+.document-item {
+  height: 407px;
+  width: 366px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#гарантии button {
+  width: 315px;
+  height: 56px;
+  background-color: var(--color-purple);
+}
+
+#отзывы {
+  height: 418px;
+  width: 1536px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.rews {
+  margin-bottom: 32px;
+}
+
+.review-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 1536px;
+    overflow: hidden;
+}
+
+.review-slider {
+  width: 1276px;
+  overflow: hidden;
+}
+
+.reviews {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review {
+  min-width: 556px;
+  height: 254px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--color-light-gray);
+  text-align: left;
+  margin-right: 24px;
+  border-radius: 16px !important;
+  border: none !important; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 256px;
+}
+
+.review p {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  top: -25px
+}
+
+.author {
+  font-size: 18px !important;
+  font-weight: 200 !important;
+  color: #6B7280;
+}
+
+#prevBtn {
+  background-color: var(--color-gray) !important;
+  border-radius: 0px !important;
+  cursor: pointer;
+  margin-left: 23px;
+  margin-right: 47px;
+}
+
+#nextBtn {
+  background-color: var(--color-gray) !important;
+  border-radius: 0px !important;
+  cursor: pointer;
+  margin-left: 47px;
+  margin-right: 23px;
+}
+
+#questions {
+  height: 554px;
+  width: 1536px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+  background-color: var(--color-light-gray);
+  border-radius: 16px;
+}
+
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 48px);
+  gap: 24px;
+  width: 358px;
+  max-height: 497px;
+  position: relative;
+  right: 84px;
+}
+
+.large {
+  grid-row: 3 / 5;
+  grid-column: span 2;
+}
+
+.large textarea {
+  height: 100%;
+  resize: none; /* Запрещаем изменение размера */
+  text-align: left; /* Текст слева */
+  vertical-align: top;
+  border: 2px solid var(--color-dark);
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+footer {
+  height: 234px;
+  width: 100vw;
+  background-color: var(--color-dark);
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  place-items: center;
+}
+
+.main {
+  height: 98px;
+  min-width: 1536px;
+  display: grid;
+  grid-template-columns: 230px 1fr auto;
+}
+
+.f {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-bottom: 8px;
+  height: 98px;
+  width: 399px;
+}
+
+.phone-section-down {
+  text-align: center;
+  padding-left: 7px;
+  line-height: 3px;
+  color: var(--color-light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offert {
+  height: 32px;
+  min-width: 1536px;
+  color: #4B5563;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -20px;
+}
+
+
+
+.oferta {
+  height: 32px;
+  width: 1146px;
+}
+
+.dev {
+  width: 242px;
+  text-align: right;
+}
