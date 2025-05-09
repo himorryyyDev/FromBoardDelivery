@@ -3,21 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/assets/css/styles.css" />
-		<link rel="stylesheet" href="/assets/css/default.css" />
-		<link rel="stylesheet" href="/assets/css/media.css" />
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-		</style>
-		<link rel="icon" href="/assets/img/icon.svg" />
+		<meta name="theme-color" content="" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/media.css" />
+		<link rel="stylesheet" href="./assets/css/basic.css">
+		<link rel="stylesheet" href="./assets/css/default.css" />
+		<link rel="preload" href="./assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+		<link rel="icon" href="./assets/img/icon.svg" />
+		<script src="./assets/js/script.js" defer></script>
 		<title>FromBoard Delivery - ваша доставка из заграницы</title>
 	</head>
 	<body>
 		<header>
 			<section class="fup">
-				<a href="/">
+				<a href="./">
 					<div class="logo">
-						<img src="/assets/img/logo.svg" alt="FromBoard Delivery Logo" />
+						<img src="./assets/img/logo.svg" alt="FromBoard Delivery Logo" />
 					</div>
 				</a>
 				<div class="rightfup">
@@ -54,7 +56,7 @@
 						наш сервис позволяет вам легко и удобно заказывать товары со всего
 						мира и получать их в России
 					</p>
-					<img src="/assets/img/office.png" alt="Office Photo" />
+					<img src="./assets/img/office.png" alt="Office Photo" />
 				</div>
 				<div class="calculator">
 					<div class="calctext">
@@ -122,7 +124,7 @@
 				<h1 class="advantages">Наши преимущества</h1>
 				<section class="advlist">
 					<div class="advitem">
-						<img src="/assets/img/Board.svg" alt="Board" />
+						<img src="./assets/img/Board.svg" alt="Board" />
 						<div>
 							<h2>Растоможка груза</h2>
 							<p>
@@ -132,7 +134,7 @@
 						</div>
 					</div>
 					<div class="advitem">
-						<img src="/assets/img/Package.svg" alt="Package" />
+						<img src="./assets/img/Package.svg" alt="Package" />
 						<div>
 							<h2>Надёжная упаковка</h2>
 							<p>
@@ -143,7 +145,7 @@
 						</div>
 					</div>
 					<div class="advitem">
-						<img src="/assets/img/Delivery.svg" alt="Delivery" />
+						<img src="./assets/img/Delivery.svg" alt="Delivery" />
 						<div>
 							<h2>Быстро и выгодно</h2>
 							<p>
@@ -153,7 +155,7 @@
 						</div>
 					</div>
 					<div class="advitem">
-						<img src="/assets/img/best support.svg" alt="Support" />
+						<img src="./assets/img/best support.svg" alt="Support" />
 						<div>
 							<h2>Удобный сервис</h2>
 							<p>
@@ -163,7 +165,7 @@
 						</div>
 					</div>
 					<div class="advitem">
-						<img src="/assets/img/clear info.svg" alt="Clear Info" />
+						<img src="./assets/img/clear info.svg" alt="Clear Info" />
 						<div>
 							<h2>Прозрачность работы</h2>
 							<p>
@@ -173,7 +175,7 @@
 						</div>
 					</div>
 					<div class="advitem">
-						<img src="/assets/img/garantee.svg" alt="garantee" />
+						<img src="./assets/img/garantee.svg" alt="garantee" />
 						<div>
 							<h2>Страхование груза</h2>
 							<p>
@@ -195,20 +197,20 @@
 					</p>
 				</div>
 				<section class="documents">
-					<div class="/assets/document-item">
-						<img src="/assets/img/ru.png" alt="Russia License" />
+					<div class="./assets/document-item">
+						<img src="./assets/img/ru.png" alt="Russia License" />
 						<h3>Свидетельство о регистрации в РФ</h3>
 					</div>
 					<div class="document-item">
-						<img src="/assets/img/usa.png" alt="USA License" />
+						<img src="./assets/img/usa.png" alt="USA License" />
 						<h3>Свидетельство о регистрации в США</h3>
 					</div>
 					<div class="document-item">
-						<img src="/assets/img/china.png" alt="China License" />
+						<img src="./assets/img/china.png" alt="China License" />
 						<h3>Свидетельство о регистрации в Китае</h3>
 					</div>
 					<div class="document-item">
-						<img src="/assets/img/uk.png" alt="UK License" />
+						<img src="./assets/img/uk.png" alt="UK License" />
 						<h3>Свидетельство о регистрации в Великобритании</h3>
 					</div>
 				</section>
@@ -218,7 +220,7 @@
 				<h1 class="rews">Отзывы</h1>
 				<div class="review-container">
 					<button id="prevBtn">
-						<img src="/assets/img/left.svg" alt="left" />
+						<img src="./assets/img/left.svg" alt="left" />
 					</button>
 					<div class="review-slider">
 						<div class="reviews">
@@ -292,7 +294,7 @@
 						</div>
 					</div>
 					<button id="nextBtn">
-						<img src="/assets/img/right.svg" alt="right" />
+						<img src="./assets/img/right.svg" alt="right" />
 					</button>
 				</div>
 			</section>
@@ -330,7 +332,7 @@
 				<div class="f">
 					<div style="display: flex; flex-direction: row">
 						<img
-							src="/assets/img/icon.svg"
+							src="./assets/img/icon.svg"
 							alt="F Logo"
 							style="margin-right: 4px"
 						/>
@@ -368,10 +370,9 @@
 					</p>
 				</div>
 				<div class="dev">
-					<p>Вёрсткой макета занимался HimoryyyDev | Что-то на IT’шном</p>
+					<p>Вёрсткой макета занимался himoryyyDev | Что-то на IT’шном</p>
 				</div>
 			</section>
 		</footer>
-		<script src="/assets/js/script.js"></script>
 	</body>
 </html>
