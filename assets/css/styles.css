@@ -17,23 +17,23 @@ header {
 	background-color: var(--color-light-gray);
 }
 
-.fup {
+.header__container {
 	margin-top: 25px;
 	margin-bottom: 25px;
 	margin-left: 192px;
 	margin-right: 192px;
 }
 
-.logo {
+.header__logo {
 	float: left;
 }
 
-.rightfup {
+.header__info {
 	display: flex;
 	justify-content: right;
 	align-items: right;
 }
-.info {
+.info__section {
 	font-size: 14px;
 	color: #333;
 	line-height: 7px;
@@ -41,48 +41,48 @@ header {
 	padding-right: 7px;
 }
 
-.phone-section {
+.phone__container {
 	text-align: center;
 	border-left: 2px solid var(--color-purple);
 	padding-left: 7px;
 	line-height: 3px;
 }
 
-.phone {
+.phone__number {
 	font-size: 26px;
 	font-weight: 900;
 }
 
-.free-calls {
+.phone__calls {
 	font-size: 16px;
 }
 
-.navsection {
+.nav__container {
 	margin-top: 30px;
 	position: relative;
 	display: flex;
 	align-items: center;
 }
 
-.nav {
+.nav__list {
 	display: flex;
 	gap: 20px;
 	justify-content: left;
 }
 
-.nav a {
+.nav__button {
 	text-decoration: none;
 	font-size: 16px;
 	color: var(--color-dark);
 	font-weight: bold;
 }
 
-.nav a.active {
+.active__button {
 	color: var(--color-purple);
 	position: relative;
 }
 
-.nav a.active::after {
+.active__button::after {
 	content: '';
 	display: block;
 	width: 100%;
@@ -91,7 +91,7 @@ header {
 	margin-top: 2px;
 }
 
-.nav a:hover {
+.nav__button:hover {
 	color: var(--color-purple);
 	cursor: pointer;
 }
@@ -103,7 +103,7 @@ button {
 	cursor: pointer;
 }
 
-.application {
+.application__button {
 	height: 44px;
 	width: 196px;
 	display: flex;
@@ -120,7 +120,7 @@ main {
 	justify-content: center;
 }
 
-#калькулятор {
+#Калькулятор {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
@@ -129,32 +129,32 @@ main {
 	margin-top: 72px;
 }
 
-.infomain {
+.information__container {
 	height: 584px;
 	width: 756px;
 	position: relative;
 }
 
-.info1 {
+.information__container:first-child {
 	font-size: 39px;
 	font-weight: 900;
 	position: relative;
 	top: -30px;
 }
 
-.info2 {
+.information__container:last-child {
 	font-size: 22px;
 	font-weight: 400;
 	position: relative;
 	top: -65px;
 }
 
-.infomain img {
+.information__container img {
 	position: relative;
 	top: -79px;
 }
 
-.calculator {
+.calculator__container {
 	height: 584px;
 	width: 756px;
 	background-color: var(--color-light-gray);
@@ -166,19 +166,19 @@ main {
 	align-items: center;
 }
 
-.calctext {
+.calculator__text {
 	width: 358px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.calc {
+.calculator__text:first-child {
 	font-size: 24px;
 	font-weight: 700;
 }
 
-.count {
+.calculator__text:last-child {
 	font-size: 16px;
 	font-weight: 400;
 	text-align: center;
@@ -186,20 +186,20 @@ main {
 	top: -10px;
 }
 
-.form-grid {
+.form__container {
 	width: 496px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 24px;
 }
 
-.form-item {
+.form__item {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.form-item input {
+.form__item input {
 	padding: 10px;
 	font-size: 16px;
 	border: 2px solid var(--color-dark);
@@ -207,7 +207,7 @@ main {
 	outline: none;
 }
 
-.submit-button {
+.submit__button {
 	padding: 15px;
 	font-size: 18px;
 	background-color: var(--color-purple);
@@ -216,11 +216,11 @@ main {
 	cursor: pointer;
 }
 
-.wide {
+.form__item--wide {
 	grid-column: span 2;
 }
 
-#о-нас {
+#О-нас {
 	height: 452px;
 	width: 1536px;
 	margin-top: 72px;
@@ -243,14 +243,14 @@ h6 {
 	font-weight: 900;
 }
 
-.advlist {
+.advantages__list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	height: 392px;
 	gap: 24px;
 }
 
-.advitem {
+.advantages__item {
 	height: 184px;
 	width: 496px;
 	display: flex;
@@ -260,16 +260,16 @@ h6 {
 	text-align: left;
 }
 
-.advitem p {
+.advantages__item p {
 	margin-top: 12px;
 	font-size: 16px;
 }
 
-.advitem img {
+.advantages__item img {
 	margin-right: 12px;
 }
 
-#гарантии {
+#Гарантии {
 	height: 671px;
 	width: 1536px;
 	display: flex;
@@ -278,16 +278,16 @@ h6 {
 	margin-bottom: 72px;
 }
 
-.quality-text {
+.quality__container {
 	width: 756px;
 	text-align: center;
 }
 
-.quality-text p {
+.quality__container p {
 	font-size: 18px;
 }
 
-.documents {
+.documents__list {
 	height: 579px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -296,7 +296,7 @@ h6 {
 	margin-bottom: 36px;
 }
 
-.document-item {
+.document__item {
 	height: 407px;
 	width: 366px;
 	display: flex;
@@ -306,13 +306,13 @@ h6 {
 	text-align: center;
 }
 
-#гарантии button {
+.quality__button {
 	width: 315px;
 	height: 56px;
 	background-color: var(--color-purple);
 }
 
-#отзывы {
+#Отзывы {
 	height: 418px;
 	width: 1536px;
 	display: flex;
@@ -321,11 +321,11 @@ h6 {
 	margin-bottom: 72px;
 }
 
-.rews {
+.rewiew__text {
 	margin-bottom: 32px;
 }
 
-.review-container {
+.review__container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -334,17 +334,17 @@ h6 {
 	overflow: hidden;
 }
 
-.review-slider {
+.review__slider {
 	width: 1276px;
 	overflow: hidden;
 }
 
-.reviews {
+#reviewContainer {
 	display: flex;
 	transition: transform 0.5s ease-in-out;
 }
 
-.review {
+.review__item {
 	min-width: 556px;
 	height: 254px;
 	padding-left: 16px;
@@ -362,7 +362,7 @@ h6 {
 	min-height: 256px;
 }
 
-.review p {
+.review__item p {
 	font-size: 25px;
 	margin-bottom: 30px;
 	font-weight: 700;
@@ -371,13 +371,13 @@ h6 {
 	top: -25px;
 }
 
-.author {
+.author__name {
 	font-size: 18px !important;
 	font-weight: 200 !important;
 	color: #6b7280;
 }
 
-#prevBtn {
+#prevButton {
 	background-color: var(--color-gray) !important;
 	border-radius: 0px !important;
 	cursor: pointer;
@@ -385,7 +385,7 @@ h6 {
 	margin-right: 47px;
 }
 
-#nextBtn {
+#nextButton {
 	background-color: var(--color-gray) !important;
 	border-radius: 0px !important;
 	cursor: pointer;
@@ -393,7 +393,7 @@ h6 {
 	margin-right: 23px;
 }
 
-#questions {
+#questions__container {
 	height: 554px;
 	width: 1536px;
 	display: flex;
@@ -404,7 +404,7 @@ h6 {
 	border-radius: 16px;
 }
 
-.quest-grid {
+.questions__grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(6, 48px);
@@ -415,12 +415,12 @@ h6 {
 	right: 84px;
 }
 
-.large {
+.form__item--large {
 	grid-row: 3 / 5;
 	grid-column: span 2;
 }
 
-.large textarea {
+.form__item--large textarea {
 	height: 100%;
 	resize: none; /* Запрещаем изменение размера */
 	text-align: left; /* Текст слева */
@@ -444,14 +444,14 @@ footer {
 	place-items: center;
 }
 
-.main {
+.footer__container {
 	height: 98px;
 	min-width: 1536px;
 	display: grid;
 	grid-template-columns: 230px 1fr auto;
 }
 
-.f {
+.footer__logo {
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
@@ -460,7 +460,7 @@ footer {
 	width: 399px;
 }
 
-.phone-section-down {
+.footer__phone {
 	text-align: center;
 	padding-left: 7px;
 	line-height: 3px;
@@ -470,7 +470,7 @@ footer {
 	justify-content: center;
 }
 
-.offert {
+.offert__container {
 	height: 32px;
 	min-width: 1536px;
 	color: #4b5563;
@@ -482,12 +482,12 @@ footer {
 	top: -20px;
 }
 
-.oferta {
+.offert__item {
 	height: 32px;
 	width: 1146px;
 }
 
-.dev {
+.dev__name {
 	width: 242px;
 	text-align: right;
 }

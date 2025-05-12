@@ -11,86 +11,84 @@
 		<link rel="stylesheet" href="./assets/css/default.css" />
 		<link rel="preload" href="./assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="">
 		<link rel="icon" href="./assets/img/icon.svg" />
-		<script src="./assets/js/script.js" defer></script>
+		<script src="./assets/js/exchange.js" defer></script>
 		<title>FromBoard Delivery - ваша доставка из заграницы</title>
 	</head>
 	<body>
 		<header>
-			<section class="fup">
+			<section class="header__container">
 				<a href="./">
-					<div class="logo">
+					<div class="header__logo">
 						<img src="./assets/img/logo.svg" alt="FromBoard Delivery Logo" />
 					</div>
 				</a>
-				<div class="rightfup">
-					<div class="info">
+				<section class="header__info">
+					<div class="info__section">
 						<p>Доставляем товары из заграницы в Россию</p>
 						<p>Стоимость от 550 рублей за заказ</p>
-						<p id="exchange-rates">1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
+						<p id="exchangeRates">1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
 					</div>
-					<div class="phone-section">
-						<p class="phone">+7 (800) 123 45-67</p>
-						<p class="free-calls">Звонки по России бесплатны</p>
+					<div class="phone__container">
+						<p class="phone__number">+7 (800) 123 45-67</p>
+						<p class="phoner__calls">Звонки по России бесплатны</p>
 					</div>
-				</div>
-				<section class="navsection">
-					<nav class="nav">
-						<a href="#калькулятор" class="active">Калькулятор</a>
-						<a href="#о-нас">О нас</a>
-						<a href="#гарантии">Гарантии</a>
-						<a href="#отзывы">Отзывы</a>
+				</section>
+				<section class="nav__container">
+					<nav class="nav__list">
+						<a href="#Калькулятор" class="nav__button active__button">Калькулятор</a>
+						<a href="#О-нас" class="nav__button">О нас</a>
+						<a href="#Гарантии" class="nav__button">Гарантии</a>
+						<a href="#Отзывы" class="nav__button">Отзывы</a>
 					</nav>
-					<button class="application">Оставить заявку</button>
+					<button class="application__button">Оставить заявку</button>
 				</section>
 			</section>
 		</header>
 		<main>
-			<section id="калькулятор">
-				<div class="infomain">
-					<p class="info1">
+			<section id="Калькулятор">
+				<div class="information__container">
+					<p>
 						Без проблемная доставка купленных вещей из США, Европы и Азии
 						в Россию
 					</p>
-					<p class="info2">
+					<p>
 						Сэкономьте на покупках и наслаждайтесь мировыми брендами —
 						наш сервис позволяет вам легко и удобно заказывать товары со всего
 						мира и получать их в России
 					</p>
 					<img src="./assets/img/office.png" alt="Office Photo" />
 				</div>
-				<div class="calculator">
-					<div class="calctext">
-						<p class="calc">Калькулятор доставки</p>
-						<p class="count">
-							Посчитайте, сколько будет стоить перевозка покупки из зарубежа
-						</p>
+				<div class="calculator__container">
+					<div class="calculatore__text">
+						<p>Калькулятор доставки</p>
+						<p>Посчитайте, сколько будет стоить перевозка покупки из зарубежа</p>
 					</div>
-					<div class="form-grid">
-						<div class="form-item wide">
+					<div class="form__container">
+						<div class="form__item form__item--wide">
 							<input type="text" id="name" placeholder="Имя" />
 						</div>
 
-						<div class="form-item">
+						<div class="form__item">
 							<input type="email" id="email" placeholder="Почта" />
 						</div>
 
-						<div class="form-item">
+						<div class="form__item">
 							<input type="tel" id="phone" placeholder="Телефон" />
 						</div>
 
-						<div class="form-item">
+						<div class="form__item">
 							<input type="number" id="area" placeholder="Общая площадь, м²" />
 						</div>
 
-						<div class="form-item">
+						<div class="form__item">
 							<input type="number" id="weight" placeholder="Вес, кг" />
 						</div>
 
-						<div class="form-item">
+						<div class="form__item">
 							<input type="text" id="country" placeholder="Страна покупки" />
 						</div>
 
-						<div class="form-item">
+						<div class="form__item">
 							<input
 								type="text"
 								id="city-purchase"
@@ -98,7 +96,7 @@
 							/>
 						</div>
 
-						<div class="form-item">
+						<div class="form__item">
 							<input
 								type="text"
 								id="delivery-region"
@@ -106,7 +104,7 @@
 							/>
 						</div>
 
-						<div class="form-item">
+						<div class="form__item">
 							<input
 								type="text"
 								id="delivery-city"
@@ -114,16 +112,16 @@
 							/>
 						</div>
 
-						<div class="form-item wide">
-							<button class="submit-button">Заказать расчёт</button>
+						<div class="form__item form__item--wide">
+							<button class="submit__button">Заказать расчёт</button>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section id="о-нас">
-				<h1 class="advantages">Наши преимущества</h1>
-				<section class="advlist">
-					<div class="advitem">
+			<section id="О-нас">
+				<h1 class="advantages__text">Наши преимущества</h1>
+				<section class="advantages__list">
+					<div class="advantages__item">
 						<img src="./assets/img/Board.svg" alt="Board" />
 						<div>
 							<h2>Растоможка груза</h2>
@@ -133,7 +131,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="advitem">
+					<div class="advantages__item">
 						<img src="./assets/img/Package.svg" alt="Package" />
 						<div>
 							<h2>Надёжная упаковка</h2>
@@ -144,7 +142,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="advitem">
+					<div class="advantages__item">
 						<img src="./assets/img/Delivery.svg" alt="Delivery" />
 						<div>
 							<h2>Быстро и выгодно</h2>
@@ -154,7 +152,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="advitem">
+					<div class="advantages__item">
 						<img src="./assets/img/best support.svg" alt="Support" />
 						<div>
 							<h2>Удобный сервис</h2>
@@ -164,7 +162,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="advitem">
+					<div class="advantages__item">
 						<img src="./assets/img/clear info.svg" alt="Clear Info" />
 						<div>
 							<h2>Прозрачность работы</h2>
@@ -174,7 +172,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="advitem">
+					<div class="advantages__item">
 						<img src="./assets/img/garantee.svg" alt="garantee" />
 						<div>
 							<h2>Страхование груза</h2>
@@ -186,8 +184,8 @@
 					</div>
 				</section>
 			</section>
-			<section id="гарантии">
-				<div class="quality-text">
+			<section id="Гарантии">
+				<div class="quality__container">
 					<h1>Гарантии качества</h1>
 					<p>
 						Наши гарантии качества включают в себя полный спектр документов,
@@ -196,35 +194,35 @@
 						и уверенность
 					</p>
 				</div>
-				<section class="documents">
-					<div class="./assets/document-item">
+				<section class="documents__container">
+					<div class="document__item">
 						<img src="./assets/img/ru.png" alt="Russia License" />
 						<h3>Свидетельство о регистрации в РФ</h3>
 					</div>
-					<div class="document-item">
+					<div class="document__item">
 						<img src="./assets/img/usa.png" alt="USA License" />
 						<h3>Свидетельство о регистрации в США</h3>
 					</div>
-					<div class="document-item">
+					<div class="document__item">
 						<img src="./assets/img/china.png" alt="China License" />
 						<h3>Свидетельство о регистрации в Китае</h3>
 					</div>
-					<div class="document-item">
+					<div class="document__item">
 						<img src="./assets/img/uk.png" alt="UK License" />
 						<h3>Свидетельство о регистрации в Великобритании</h3>
 					</div>
 				</section>
-				<button>Показать больше документов</button>
+				<button class="quality__button">Показать больше документов</button>
 			</section>
-			<section id="отзывы">
-				<h1 class="rews">Отзывы</h1>
-				<div class="review-container">
-					<button id="prevBtn">
+			<section id="Отзывы">
+				<h1 class="review__text">Отзывы</h1>
+				<div class="review__container">
+					<button id="prevButton">
 						<img src="./assets/img/left.svg" alt="left" />
 					</button>
-					<div class="review-slider">
-						<div class="reviews">
-							<div class="review">
+					<div class="review__slider">
+						<div id="reviewContainer">
+							<div class="review__item">
 								<div style="height: 224px; width: 540px">
 									<p>
 										Я заказала последний iPhone из США через ваш сервис,
@@ -234,11 +232,11 @@
 									</p>
 								</div>
 								<div style="margin-top: 25px; width: 540px; height: 32px">
-									<p class="author">Анна</p>
+									<p class="author__name">Анна</p>
 								</div>
 							</div>
 
-							<div class="review">
+							<div class="review__item">
 								<div style="height: 224px; width: 540px">
 									<p>
 										Я уже несколько лет заказываю дизайнерскую одежду из Франции
@@ -248,11 +246,11 @@
 									</p>
 								</div>
 								<div style="margin-top: 25px; width: 540px; height: 32px">
-									<p class="author">Алексей</p>
+									<p class="author__name">Алексей</p>
 								</div>
 							</div>
 
-							<div class="review">
+							<div class="review__item">
 								<div style="height: 224px; width: 540px">
 									<p>
 										Заказал шикарные часы из Швейцарии, и доставка была
@@ -261,11 +259,11 @@
 									</p>
 								</div>
 								<div style="margin-top: 25px; width: 540px; height: 32px">
-									<p class="author">Игорь</p>
+									<p class="author__name">Игорь</p>
 								</div>
 							</div>
 
-							<div class="review">
+							<div class="review__item">
 								<div style="height: 224px; width: 540px">
 									<p>
 										Ваш сервис действительно изменил мой способ покупок. Я
@@ -274,11 +272,11 @@
 									</p>
 								</div>
 								<div style="margin-top: 25px; width: 540px; height: 32px">
-									<p class="author">Екатерина</p>
+									<p class="author__name">Екатерина</p>
 								</div>
 							</div>
 
-							<div class="review">
+							<div class="review__item">
 								<div style="height: 224px; width: 540px">
 									<p>
 										Я заказал редкий антикварный предмет из Японии через ваш
@@ -288,7 +286,7 @@
 									</p>
 								</div>
 								<div style="margin-top: 25px; width: 540px; height: 32px">
-									<p class="author">Дмитрий</p>
+									<p class="author__name">Дмитрий</p>
 								</div>
 							</div>
 						</div>
@@ -298,38 +296,38 @@
 					</button>
 				</div>
 			</section>
-			<section id="questions">
+			<section id="questions__container">
 				<h1 style="margin-top: 64px; margin-bottom: 32px">Остались вопросы?</h1>
-				<section class="quest-grid">
-					<div class="form-item">
+				<section class="questions__grid">
+					<div class="form__item">
 						<input type="text" id="name" placeholder="Имя" />
 					</div>
 
-					<div class="form-item">
+					<div class="form__item">
 						<input type="email" id="email" placeholder="Почта" />
 					</div>
 
-					<div class="form-item">
+					<div class="form__item">
 						<input type="tel" id="phone" placeholder="Телефон" />
 					</div>
 
-					<div class="form-item">
+					<div class="form__item">
 						<input type="text" id="theme" placeholder="Тема вопроса" />
 					</div>
 
-					<div class="form-item large">
+					<div class="form__item form__item--large">
 						<textarea id="question" placeholder="Сообщение..."></textarea>
 					</div>
 
-					<div class="form-item wide">
-						<button class="submit-button">Отправить заявку</button>
+					<div class="form__item form__item--wide">
+						<button class="submit__button">Отправить заявку</button>
 					</div>
 				</section>
 			</section>
 		</main>
 		<footer>
-			<section class="main">
-				<div class="f">
+			<section class="footer__container">
+				<div class="footer__logo">
 					<div style="display: flex; flex-direction: row">
 						<img
 							src="./assets/img/icon.svg"
@@ -343,23 +341,23 @@
 					</p>
 				</div>
 				<section
-					class="navsection"
+					class="nav__container"
 					style="display: flex; flex-direction: row; justify-content: center"
 				>
-					<nav class="nav">
+					<nav class="nav__list">
 						<a href="#калькулятор" style="color: #f9fafb">Калькулятор</a>
 						<a href="#о-нас" style="color: #f9fafb">О нас</a>
 						<a href="#гарантии" style="color: #f9fafb">Гарантии</a>
 						<a href="#отзывы" style="color: #f9fafb">Отзывы</a>
 					</nav>
 				</section>
-				<div class="phone-section-down">
-					<p class="phone">+7 (800) 123 45-67</p>
-					<p class="free-calls">Звонки по России бесплатны</p>
+				<div class="footer__phone">
+					<p class="phone__number">+7 (800) 123 45-67</p>
+					<p class="phone__calls">Звонки по России бесплатны</p>
 				</div>
 			</section>
-			<section class="offert">
-				<div class="oferta">
+			<section class="offert__container">
+				<div class="offert__item">
 					<p style="text-align: left">
 						НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то,
 						что цены носят информационный и ознакомительный характер, а значит
@@ -369,7 +367,7 @@
 						и исчерпывающей
 					</p>
 				</div>
-				<div class="dev">
+				<div class="dev__name">
 					<p>Вёрсткой макета занимался himoryyyDev | Что-то на IT’шном</p>
 				</div>
 			</section>

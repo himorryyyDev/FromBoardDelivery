@@ -1,13 +1,1 @@
-@media (max-width: 1536px) {
-	.fup {
-		width: 1026px;
-	}
 
-	main {
-		width: 1026px;
-	}
-
-	#калькулятор {
-		grid-template-columns: repeat(1, 1fr);
-	}
-}

@@ -6,7 +6,7 @@ async function updateExchangeRates() {
                 const eurToRub = data.rates.RUB / data.rates.EUR;
                 const cnyToRub = data.rates.RUB / data.rates.CNY;
                 
-                document.getElementById('exchange-rates').innerHTML = 
+                document.getElementById('exchangeRates').innerHTML = 
                     `1 $ = ${usdToRub.toFixed(2)} ₽ | 1 € = ${eurToRub.toFixed(2)} ₽ | 1 ¥ = ${cnyToRub.toFixed(2)} ₽`;
             } catch (error) {
                 console.error('Ошибка загрузки курсов валют:', error);
@@ -17,9 +17,9 @@ async function updateExchangeRates() {
         window.onload = updateExchangeRates;
 
 
-const reviews = document.querySelector('.reviews');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+const reviews = document.getElementById('reviewContainer');
+const prevBtn = document.getElementById('prevButton');
+const nextBtn = document.getElementById('nextButton');
 
 let index = 0; // Индекс первого видимого отзыва
 const reviewWidth = 612; // Ширина одного отзыва (300px + 20px отступ)
