@@ -1,3 +1,8 @@
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
@@ -6,6 +11,10 @@ html {
 
 body {
 	margin: 0;
+	cursor: default;
+	-webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+	width: 100%;
+	overflow-x: hidden;
 }
 
 main {
