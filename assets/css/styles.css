@@ -135,14 +135,14 @@ main {
 	position: relative;
 }
 
-.information__container:first-child {
+.information__container p:first-of-type {
 	font-size: 39px;
 	font-weight: 900;
 	position: relative;
 	top: -30px;
 }
 
-.information__container:last-child {
+.information__container p:last-of-type {
 	font-size: 22px;
 	font-weight: 400;
 	position: relative;
@@ -173,12 +173,12 @@ main {
 	align-items: center;
 }
 
-.calculator__text:first-child {
+.calculator__text p:first-of-type {
 	font-size: 24px;
 	font-weight: 700;
 }
 
-.calculator__text:last-child {
+.calculator__text p:last-of-type {
 	font-size: 16px;
 	font-weight: 400;
 	text-align: center;
@@ -287,7 +287,7 @@ h6 {
 	font-size: 18px;
 }
 
-.documents__list {
+.documents__container {
 	height: 579px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
