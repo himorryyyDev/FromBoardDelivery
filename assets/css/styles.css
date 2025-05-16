@@ -441,9 +441,9 @@ footer {
 
 .footer__container {
 	height: 98px;
-	min-width: 1536px;
-	display: grid;
-	grid-template-columns: 230px 1fr auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .footer__logo {
@@ -467,7 +467,6 @@ footer {
 
 .offert__container {
 	height: 32px;
-	min-width: 1536px;
 	color: #4b5563;
 	font-size: 12px;
 	display: flex;
@@ -475,11 +474,12 @@ footer {
 	justify-content: space-between;
 	position: relative;
 	top: -20px;
+	margin: 0px 20px;
+	gap: 40px;
 }
 
 .offert__item {
 	height: 32px;
-	width: 1146px;
 }
 
 .dev__name {

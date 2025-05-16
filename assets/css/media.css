@@ -21,3 +21,9 @@
 		width: 590px;
 	}
 }
+
+@media (max-width: 1480px) {
+	.footer__container {
+		width: 95vw;
+	}
+}
