@@ -1,1 +1,23 @@
+@media (max-width: 1620px) {
+	#Калькулятор {
+		grid-template-columns: repeat(1, 1fr);
+		margin: 0 auto;
+	}
 
+	.advantages__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.documents__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#questions__container {
+		width: max-content;
+		padding: 0px 30px;
+	}
+
+	.review__slider {
+		width: 590px;
+	}
+}
